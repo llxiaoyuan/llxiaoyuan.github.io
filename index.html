@@ -3,37 +3,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chat Combined</title>
+    <title>Chat Index</title>
     <style>
         body {
             font-family: Arial, sans-serif;
         }
         h1 {
             text-align: center;
-            margin-top: 20px;
+        }
+        ol {
+            font-size: 1.4em;
+            line-height: 2.0em;
+            list-style-position: inside;
         }
         section {
-            margin: 20px;
+            margin: 10px;
             border: 1px solid #ccc;
             border-radius: 8px;
         }
-        h2 {
-            margin: 0;
-            padding: 10px;
-            background-color: #f0f0f0;
-            cursor: pointer;
-        }
         .content {
-            padding: 10px;
             display: none;
         }
     </style>
 </head>
 <body>
-    <h1>Chat Combined</h1>
+    <h1>Chat Index</h1>
+    <ol>
 
     <section>
-        <h2 onclick="toggleContent(this)">chat\女生关心你的时候，该怎么接招？详细版教学.html</h2>
+        <li onclick="toggleContent(this)">chat\女生关心你的时候，该怎么接招？详细版教学.html</li>
         <div class="content"><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -156,7 +154,7 @@
     </section>
 
     <section>
-        <h2 onclick="toggleContent(this)">chat\女生刚分手，如何不把自己聊成备胎.html</h2>
+        <li onclick="toggleContent(this)">chat\女生刚分手，如何不把自己聊成备胎.html</li>
         <div class="content"><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -309,7 +307,7 @@
     </section>
 
     <section>
-        <h2 onclick="toggleContent(this)">chat\女生过生日怎么聊 才能让她开心 一定要看到最后.html</h2>
+        <li onclick="toggleContent(this)">chat\女生过生日怎么聊 才能让她开心 一定要看到最后.html</li>
         <div class="content"><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -466,7 +464,7 @@
     </section>
 
     <section>
-        <h2 onclick="toggleContent(this)">chat\聊了有段时间的相亲对象说我们不合适，该怎么办？.html</h2>
+        <li onclick="toggleContent(this)">chat\聊了有段时间的相亲对象说我们不合适，该怎么办？.html</li>
         <div class="content"><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -621,6 +619,7 @@
 </div>
     </section>
 
+    </ol>
     <script>
         function toggleContent(header) {
             const content = header.nextElementSibling;
